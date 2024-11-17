@@ -48,7 +48,7 @@ public class GildedRose {
                 {
                     items.get(i).setQuality(items.get(i).getQuality() + 1);
 
-                    if ("Backstage passes to a TAFKAL80ETC concert".equals(items.get(i).getName()))
+                    if ("Aged Brie".equals(items.get(i).getName()) || "Backstage passes to a TAFKAL80ETC concert".equals(items.get(i).getName()))
                     {
                         if (items.get(i).getSellIn() < 11)
                         {
@@ -97,7 +97,7 @@ public class GildedRose {
                 {
                     if (items.get(i).getQuality() < 50)
                     {
-                        items.get(i).setQuality(items.get(i).getQuality() + 1);
+                        items.get(i).setQuality(items.get(i).getQuality() - items.get(i).getQuality());
                     }
                 }
             }
